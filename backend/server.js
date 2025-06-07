@@ -7,8 +7,7 @@ const PORT = process.env.PORT || 5000
 
 const app = express()
 app.use(cors({
-  origin: 'http://localhost:5173'  // solo permite solicitudes desde Vite
-  // También puedes agregar credentials: true si usas cookies o auth headers
+  origin: 'http://localhost:5173'  
 }))
 
 app.use(express.json())
